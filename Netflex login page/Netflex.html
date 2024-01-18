@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            background-image: url(img/background.jpg);
+            background-size: cover;
+            max-width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            border-bottom: 10px solid rgb(72, 70, 70);
+        }
+        .box{
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            opacity: .65;
+            position: relative;
+
+        }
+        nav{
+            display: flex;
+            width: 70vw;
+            height: 50px;
+            margin: auto;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            padding-top: 20px;
+        }
+        .buttons{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+           
+
+        }
+        .button1{
+            width: 110px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            opacity: .67;
+            border: 2px solid white;
+            
+        }
+        .button2{
+            width: 80px;
+            height: 30px;
+            border-radius: 5px;
+            color: white;
+            background-color: red;
+            border: 2px solid red;
+            
+        }
+        .container1{
+            
+            position: absolute;
+            top: 200px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: white;
+            font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+            text-align: center;
+            width: 60%;
+            height: 50%;
+            line-height: 55px;
+            
+        }
+        .conh1{
+            font-size: 47px;
+        }
+        .searchbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .search{
+            width: 40%;
+            height: 40px;
+            border-radius: 5px;
+            background-color: black;
+            opacity: .99;
+            border: 1px solid gray;
+            
+        }
+        ::placeholder{
+                color: white;
+                padding-left: 10px;
+            }
+        .searchbutton{
+         
+            align-items: center;
+            height: 40px;
+            width: 25%;
+            border-radius: 5px;
+            background-color: red;
+            border: 1px solid red;
+            color: white;
+            
+        }
+        .searchbutton>h1{
+            font-size: 160%;
+        }
+
+        .main2{
+            display: flex;
+            color: white;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+        }
+    .main2text{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       font-size: larger;
+        padding: 100px;
+    }
+    .main2text>h1{
+        line-height: 90px;
+        font-size: 60px;
+    }
+    .tvpng{
+        position: sticky;
+    }
+    .video1{
+        position: relative;
+        bottom: 387px;
+        left: 73px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+        <nav>
+            <div class="logo"><img src="logo.svg" alt="logo" width="150px" class="Netflixlogo"></div>
+            <div class="buttons">
+                <button class="button1">English</button>
+                <button class="button2">Sign In</button>
+            </div>
+        </nav>
+        <div class="container1">
+            <h1 class="conh1">Unlimited movies, TV shows, and more</h1>
+            <h3 class="cont21">Watch anywhere. Cancel anytime.</h3>
+            <h3 class="cont22">Ready to watch? Enter your email to create or restart your membership.</h3>
+            <div class="searchbar">
+                <input type="text" placeholder="Email address" class="search">
+                <button class="searchbutton"><h1>Get Started ></h1></button>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="main2text">
+        <h1>Enjoy on your TV</h1>
+        <h3>Watch on Smart TVs,Playstation,Xbox,Chromecast,Apple TV,Blu-ray players,and more. </h3>
+    </div>
+        <div class="scene1">
+            <img src="img/tv.png" alt="tvpng" class="tvpng">
+            <video src="videos/video-tv-0819.mp4" class="video1" autoplay loop></video>
+        </div>
+    </div>
+</body>
+</html>
